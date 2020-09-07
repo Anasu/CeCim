@@ -67,7 +67,6 @@ import {mapActions} from 'vuex'
     ]),
       onSubmit(evt) {
         evt.preventDefault()
-        console.log(JSON.stringify(this.form))
         this.validarLogin(this.form)
         this.$router.push('/');
       },
