@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["soon"],{9109:function(n,e,t){"use strict";t.r(e);var o=function(){var n=this,e=n.$createElement,t=n._self._c||e;return t("h2",[n._v("Proximamente")])},l=[],r=t("2877"),s={},u=Object(r["a"])(s,o,l,!1,null,null,null);e["default"]=u.exports}}]);
+//# sourceMappingURL=soon.a6574cf6.js.map
