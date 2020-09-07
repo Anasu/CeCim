@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
+import store from '../store/index.js'
 
 Vue.use(VueRouter)
 
@@ -44,5 +45,16 @@ const router = new VueRouter({
   base: process.env.BASE_URL,
   routes
 })
+
+router.beforeEach((to, from, next) => {
+
+  let authRequired = to.matched.some(route => route.meta.login);
+  if (store.state.islogged == false && authRequired) {
+    
+    next('login');
+  } else {
+    next();
+  }
+});
 
 export default router

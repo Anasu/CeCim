@@ -69,6 +69,7 @@ import {mapActions} from 'vuex'
         evt.preventDefault()
         console.log(JSON.stringify(this.form))
         this.validarLogin(this.form)
+        this.$router.push('/');
       },
     }
   }
