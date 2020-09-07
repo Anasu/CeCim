@@ -1,5 +1,5 @@
 <template>
-  <sidebar-menu :menu="menulogin" />
+  <sidebar-menu :menu="menulogin" collapsed/>
 </template>
  
 <script>
