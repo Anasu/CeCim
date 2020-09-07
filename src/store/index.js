@@ -8,14 +8,16 @@ export default new Vuex.Store({
     islogged: false,
   },
   getters: {
-
+    getLogStatus(state)
+    {
+      return state.islogged
+    }
   },
   mutations: {
     VALIDARLOGIN(state, logged)
     {
       state.islogged = logged;
     }
-
   },
   actions: {
     validarLogin(context, form)

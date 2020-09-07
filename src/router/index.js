@@ -31,6 +31,14 @@ Vue.use(VueRouter)
     }
   },
   {
+    path: '/soon',
+    name: 'Soon',
+    component: () => import(/* webpackChunkName: "soon" */ '../views/Soon.vue'),
+    meta: {
+      login: false
+    }
+  },
+  {
     path: '/*',
     name: 'Not-Found',
     component: () => import(/* webpackChunkName: "*" */ '../views/NotFound.vue'),

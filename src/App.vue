@@ -1,16 +1,31 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <navbar ></navbar>
     </div>
-    <router-view/>
+    <router-view></router-view>
   </div>
 </template>
+
+<script>
+import Navbar from './components/Navbar'
+
+export default {
+  components: {
+    Navbar,
+  },
+  data() {
+    return {
+    }
+  }
+}
+</script> 
 
 <style lang="scss">
 //roboto
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+
 #app {
   font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -20,15 +35,6 @@
 }
 
 #nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+  display: flex;
 }
 </style>
